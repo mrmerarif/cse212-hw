@@ -24,13 +24,13 @@ public static class Divisors
         List<int> results = new List<int>();
         for (int i = 1; i < number; i++)
         {
-            if (number % i == 0)
+            if (number % i == 0) 
             {
                 results.Add(i);
             }
         }
 
         // TODO problem 1
-        return results;
+        return results;  
     }
 }

@@ -51,7 +51,7 @@ public class RotateListRightTests
     {
         List<int> numbers = new() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         Arrays.RotateListRight(numbers, 3);
-        CollectionAssert.AreEqual(new List<int> { 7, 8, 9, 1, 2, 3, 4, 5, 6 }, numbers);
+        CollectionAssert.AreEqual(new List<int> { 7, 8, 9, 1, 2, 3, 4, 5, 6 }, numbers); 
     }
 
     [TestMethod]
