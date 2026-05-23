@@ -13,6 +13,7 @@ public class PersonQueue
     /// <param name="person">The person to add</param>
     public void Enqueue(Person person)
     {
+        // Add to the back of the queue (FIFO behavior)
         _queue.Add(person);   // FIXED: add to the BACK, not the front
     }
 
