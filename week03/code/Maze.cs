@@ -1,4 +1,4 @@
-/// <summary>
+/// <summary> 
 /// Defines a maze using a dictionary. The dictionary is provided by the
 /// user when the Maze object is created. The dictionary will contain the
 /// following mapping:
@@ -25,41 +25,75 @@ public class Maze
         _mazeMap = mazeMap;
     }
 
+    private void CheckBounds(int x, int y)
+    {
+        if (x < 1 || x > 6 || y < 1 || y > 6)
+            throw new InvalidOperationException("Can't go that way!");
+    }
+
     // TODO Problem 4 - ADD YOUR CODE HERE
-    /// <summary>
-    /// Check to see if you can move left.  If you can, then move.  If you
-    /// can't move, throw an InvalidOperationException with the message "Can't go that way!".
-    /// </summary>
     public void MoveLeft()
     {
         // FILL IN CODE
+        var moves = _mazeMap[(_currX, _currY)];
+
+        if (!moves[0])
+            throw new InvalidOperationException("Can't go that way!");
+
+        var newX = _currX - 1;
+        var newY = _currY;
+
+        CheckBounds(newX, newY);
+
+        _currX = newX;
     }
 
-    /// <summary>
-    /// Check to see if you can move right.  If you can, then move.  If you
-    /// can't move, throw an InvalidOperationException with the message "Can't go that way!".
-    /// </summary>
     public void MoveRight()
     {
         // FILL IN CODE
+        var moves = _mazeMap[(_currX, _currY)];
+
+        if (!moves[1])
+            throw new InvalidOperationException("Can't go that way!");
+
+        var newX = _currX + 1;
+        var newY = _currY;
+
+        CheckBounds(newX, newY);
+
+        _currX = newX;
     }
 
-    /// <summary>
-    /// Check to see if you can move up.  If you can, then move.  If you
-    /// can't move, throw an InvalidOperationException with the message "Can't go that way!".
-    /// </summary>
     public void MoveUp()
     {
         // FILL IN CODE
+        var moves = _mazeMap[(_currX, _currY)];
+
+        if (!moves[2])
+            throw new InvalidOperationException("Can't go that way!");
+
+        var newX = _currX;
+        var newY = _currY - 1;
+
+        CheckBounds(newX, newY);
+
+        _currY = newY;
     }
 
-    /// <summary>
-    /// Check to see if you can move down.  If you can, then move.  If you
-    /// can't move, throw an InvalidOperationException with the message "Can't go that way!".
-    /// </summary>
     public void MoveDown()
     {
         // FILL IN CODE
+        var moves = _mazeMap[(_currX, _currY)];
+
+        if (!moves[3])
+            throw new InvalidOperationException("Can't go that way!");
+
+        var newX = _currX;
+        var newY = _currY + 1;
+
+        CheckBounds(newX, newY);
+
+        _currY = newY;
     }
 
     public string GetStatus()
