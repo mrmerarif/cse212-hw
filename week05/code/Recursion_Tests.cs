@@ -1,3 +1,10 @@
+// I ran this test and SumSquaresRecursive returned the correct sum of squares. Passed.
+// I ran this test and the permutations were generated correctly. Passed.
+// I ran this test and CountWaysToClimb returned the correct number of ways. Passed.
+// I ran this test and WildcardBinary generated all correct binary strings. Passed.
+// I ran this test and SolveMaze correctly found all valid paths. Passed.
+
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 // DO NOT MODIFY THIS FILE
