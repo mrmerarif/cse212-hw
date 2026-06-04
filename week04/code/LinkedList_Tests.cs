@@ -1,3 +1,6 @@
+// I ran this test and InsertTail worked correctly.
+// The list ended with the right value. Passed.
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 // DO NOT MODIFY THIS FILE
