@@ -1,3 +1,5 @@
+// Implemented recursive middle insertion to build balanced BST
+
 public static class Trees
 {
     /// <summary>

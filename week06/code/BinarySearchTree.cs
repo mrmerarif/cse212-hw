@@ -1,3 +1,5 @@
+// Implemented reverse traversal: Right → Node → Left
+
 using System.Collections;
 
 public class BinarySearchTree : IEnumerable<int>

@@ -1,3 +1,10 @@
+// Added duplicate check: if value == Data, return without inserting
+// TODO Start Problem 2
+// Implemented recursive search: compare value, recurse left or right
+// Implemented recursive height calculation: 1 + max(left, right)
+
+
+
 public class Node
 {
     public int Data { get; set; }
